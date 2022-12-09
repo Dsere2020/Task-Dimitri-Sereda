@@ -1,0 +1,27 @@
+ <BigDiv>
+        <DataTable
+          title="Data"
+          columns={columns}
+          data={data}
+          pagination={perPage}
+          style={{ height: "100%", width: "100%" }}
+        />
+      </BigDiv>
+      <ModalDiv>
+      <ModalHeader toggle={toggle}>Add Your Information</ModalHeader>
+      <ModalBody>
+      <FormGroup>
+          <input></input>
+          <input></input>
+          <input></input>
+          <select>
+            
+
+          </select>
+          <input></input>
+          <input></input>
+
+            
+          </FormGroup>
+      </ModalBody>
+      </ModalDiv>

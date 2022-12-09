@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import styled from "styled-components";
+import { useEffect, useState } from "react";
+import useStore from "./store";
+import TableData from "./TableData";
 
-function App() {
+
+interface arrayPart {
+  name: string;
+  id: number;
+  email: string;
+  gender: string;
+  phone: string;
+  address: any;
+}
+
+const Container = styled.div`
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-color: darkcyan;
+ 
+`
+
+
+
+
+function App(): JSX.Element {
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+     
+     <TableData/>
+   
+    </Container>
+  )
 }
 
 export default App;
