@@ -96,8 +96,19 @@ const ModalComp = ({ modal, setModal, modalClose }: {modal: boolean, setModal: (
   const [phone, setPhone] = useState("");
   const [gender, setGender] = useState("Not selected");
   const toggle = () => setModal(!modal)
-
+  const id = 0;
   const handleChange = () => {
+    modalClose({
+      name,
+      email,
+      street,
+      city,
+      phone,
+      gender,
+      id,
+
+      
+    });
     setModal(!modal);
     setName("");
     setEmail("");
